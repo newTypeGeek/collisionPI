@@ -9,6 +9,13 @@ void computePi(int digit) {
 
     std::cout << "[INFO] computePi function is called" << std::endl;
     std::cout << "[INFO] Pi is computed via a counting collisions from a physics engine" << std::endl;
+    
+    if (digit < 1) {
+        std::cout << "[ERROR] Number of digit must be greater than or equal to 1" << std::endl;
+        std::cout << "EXIT" << std::endl;
+        exit(0);
+    }
+
 
     double massRatio = std::pow(100, digit-1);
     double initSpeed = 1;

@@ -6,8 +6,10 @@ Reference: YouTube video: https://www.youtube.com/watch?v=HEfHFsfGXjs&list=PLZHQ
 1. First download this repository, or using command line: `git clone https://github.com/newTypeGeek/collisionPI.git`
 
 2. Compile the source codes:
-   `g++ *.cpp -c`
-   `g++ *.o`
+   ```
+   g++ *.cpp -c
+   g++ *.o
+   ```
 
 3. Run the program
    `./a.out`

@@ -3,7 +3,10 @@ Compute PI with specified number of digit from elastic collisions <br>
 Reference: YouTube video: https://www.youtube.com/watch?v=HEfHFsfGXjs&list=PLZHQObOWTQDMalCO_AXOC5GWsuY8bOC_Y&index=2&t=0s
 
 # How it works
-1. First download this repository, or using command line: `git clone https://github.com/newTypeGeek/collisionPI.git`
+1. First download this repository, or using command line: 
+   ```
+   git clone https://github.com/newTypeGeek/collisionPI.git
+   ```
 
 2. Compile the source codes:
    ```
@@ -42,3 +45,6 @@ Reference: YouTube video: https://www.youtube.com/watch?v=HEfHFsfGXjs&list=PLZHQ
    ```
    The Pi is computed to be 3.141592653 (10 digits in total)
    
+
+# Limitations
+  We compute Pi by counting the total number of collisions (an integer). In this program, written in C++, `unsigned long long` variable is used to count the number of collision. The maximum value is `ULLONG_MAX = 18446744073709551615` (64 bits, 20 digits). As a result this program at this date can only compute Pi with a maximum of 19 digits only.
